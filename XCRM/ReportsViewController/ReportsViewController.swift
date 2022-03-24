@@ -3,6 +3,7 @@ import UIKit
 class ReportsViewController: UIViewController {
     
     @IBOutlet var viewsCollection: [UIView]!
+    @IBOutlet weak var createOrdersCount: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         viewsCollection[0].layer.borderWidth = 1
