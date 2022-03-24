@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="XCRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="52"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vqt-iv-TOC">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhj-Sm-vPd">
+                                <rect key="frame" x="0.0" y="10" width="127" height="32"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bhj-Sm-vPd" firstAttribute="top" secondItem="Vqt-iv-TOC" secondAttribute="top" constant="10" id="6pl-j6-OfY"/>
+                            <constraint firstItem="bhj-Sm-vPd" firstAttribute="leading" secondItem="Vqt-iv-TOC" secondAttribute="leading" id="X4A-nk-aiG"/>
+                            <constraint firstAttribute="trailing" secondItem="bhj-Sm-vPd" secondAttribute="trailing" id="cj9-7O-fNK"/>
+                            <constraint firstAttribute="bottom" secondItem="bhj-Sm-vPd" secondAttribute="bottom" constant="10" id="eDG-Bl-iNL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Vqt-iv-TOC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RLH-OR-Sih"/>
+                <constraint firstAttribute="trailing" secondItem="Vqt-iv-TOC" secondAttribute="trailing" id="SAC-2i-VoK"/>
+                <constraint firstItem="Vqt-iv-TOC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fu1-FW-6zi"/>
+                <constraint firstAttribute="bottom" secondItem="Vqt-iv-TOC" secondAttribute="bottom" id="nr9-KZ-DFf"/>
+            </constraints>
+            <size key="customSize" width="283" height="77"/>
+            <connections>
+                <outlet property="categoryView" destination="Vqt-iv-TOC" id="4VK-SR-LId"/>
+            </connections>
+            <point key="canvasLocation" x="306.52173913043481" y="68.303571428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

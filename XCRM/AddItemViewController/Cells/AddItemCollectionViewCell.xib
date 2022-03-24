@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddItemCollectionViewCell" customModule="XCRM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="49"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3a-x8-lPG">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="49"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Текст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14V-N3-OuB">
+                                <rect key="frame" x="8" y="8" width="319" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="14V-N3-OuB" firstAttribute="leading" secondItem="a3a-x8-lPG" secondAttribute="leading" constant="8" id="E2J-rW-QWt"/>
+                            <constraint firstAttribute="bottom" secondItem="14V-N3-OuB" secondAttribute="bottom" constant="8" id="Pyt-l9-gYy"/>
+                            <constraint firstItem="14V-N3-OuB" firstAttribute="top" secondItem="a3a-x8-lPG" secondAttribute="top" constant="8" id="bfX-wl-0J3"/>
+                            <constraint firstAttribute="trailing" secondItem="14V-N3-OuB" secondAttribute="trailing" constant="8" id="oZn-ww-7Pr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="a3a-x8-lPG" secondAttribute="bottom" id="7i1-ee-JID"/>
+                <constraint firstItem="a3a-x8-lPG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dMN-pF-g0w"/>
+                <constraint firstItem="a3a-x8-lPG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="myU-hR-j2T"/>
+                <constraint firstAttribute="trailing" secondItem="a3a-x8-lPG" secondAttribute="trailing" id="nPZ-lc-PFU"/>
+            </constraints>
+            <connections>
+                <outlet property="addItemTextField" destination="14V-N3-OuB" id="7fh-DW-d1M"/>
+                <outlet property="addItemUiView" destination="a3a-x8-lPG" id="0hW-J9-bbD"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="113.50446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
